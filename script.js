@@ -36,6 +36,12 @@ function incomePart() {
 function savingsPart() {
     incomePart();
     const giveSavingsAmount = getIncomeExpensesAmounts('savingsAmount');
+
+    if (isNaN(giveSavingsAmount)) {
+        alert('Please enter amount for calculate');
+        return;
+    }
+
     savings = giveSavingsAmount * totalExpense / 100;
     displayValue('savingAmount', savings.toFixed(2));
     remainingTotalBalance = total + savings;
