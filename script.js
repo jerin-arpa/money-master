@@ -63,15 +63,11 @@ function emptyTextValue() {
 
 const calculateBtn = document.getElementById('calculateBtn').addEventListener('click', function () {
     incomePart();
-    emptyValue();
-    emptyTextValue();
 });
 
 
 const savingsBtn = document.getElementById('savingsBtn').addEventListener('click', function () {
     savingsPart();
-    emptyValue();
-    emptyTextValue();
 });
 
 
