@@ -20,6 +20,12 @@ function incomePart() {
     const expenseForFood = getIncomeExpensesAmounts('foodAmount');
     const expenseForRent = getIncomeExpensesAmounts('rentAmount');
     const expenseForCloths = getIncomeExpensesAmounts('clothsAmount');
+
+    if (isNaN(totalIncome) || isNaN(expenseForFood) || isNaN(expenseForRent) || isNaN(expenseForCloths)) {
+        alert('Please enter amount for calculate');
+        return;
+    }
+
     totalExpense = expenseForFood + expenseForRent + expenseForCloths;
     displayValue('totalExpenses', totalExpense.toFixed(2));
     total = totalIncome - totalExpense;

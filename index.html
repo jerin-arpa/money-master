@@ -121,12 +121,16 @@
 
                         <!-- Total expenses -->
                         <div class="text-center my-4 text-2xl font-bold">
-                            <h2>Total Expenses: <span id="totalExpenses">00.00</span> TK</h2>
+                            <h2>Total Expenses: <span id="totalExpenses" class="text-gray-400 font-light">00.00</span>
+                                <span class="text-gray-400 font-light">TK</span>
+                            </h2>
                         </div>
 
                         <!-- Balance -->
                         <div class="text-center my-4 text-2xl font-bold">
-                            <h2>Balance: <span id="totalBalance">00.00</span> TK</h2>
+                            <h2>Balance: <span id="totalBalance" class="text-gray-400 font-light">00.00</span>
+                                <span class="text-gray-400 font-light">TK</span>
+                            </h2>
                         </div>
 
                     </div>
@@ -138,13 +142,15 @@
                         <div class="flex flex-col text-center">
                             <h2 class="text-2xl text-center font-bold mb-3">Savings</h2>
                             <p class="mb-3">
-                                <span class="font-bold">Save:</span>
-
                                 <!-- savings input -->
-                                <input id="savingsAmount" type="number" placeholder="Type here"
-                                    class="input input-bordered input-accent w-full max-w-xs" />
-                                <span class="text-xl font-bold">%</span>
+                                <label class="input-group flex justify-center">
+                                    <span class="font-bold bg-green-200">Save:</span>
+                                    <input id="savingsAmount" type="number" placeholder="Type here"
+                                        class="input input-bordered input-accent w-full max-w-xs" />
+                                    <span class="text-xl font-bold bg-green-200">%</span>
+                                </label>
                             </p>
+
                             <!-- savings button -->
                             <div class="flex justify-center mt-3 mb-5">
                                 <button id="savingsBtn" class="btn btn-accent px-10 text-white">Save</button>
@@ -153,20 +159,24 @@
 
                         <!-- Saving Amount -->
                         <div class="text-center my-4 text-2xl font-bold">
-                            <h2>Saving Amount: <span id="savingAmount">00.00</span> TK</h2>
+                            <h2>Saving Amount: <span id="savingAmount" class="text-gray-400 font-light">00.00</span>
+                                <span class="text-gray-400 font-light">TK</span>
+                            </h2>
                         </div>
 
                         <!-- Remaining Balance -->
                         <div class="text-center my-4 text-2xl font-bold">
-                            <h2>Remaining Balance: <span id="remainingBalance">00.00</span> TK</h2>
+                            <h2>Remaining Balance: <span id="remainingBalance"
+                                    class="text-gray-400 font-light">00.00</span>
+                                <span class="text-gray-400 font-light">TK</span>
+                            </h2>
                         </div>
                     </div>
 
 
                     <!-- Reset all button -->
                     <div class="flex justify-center mt-10">
-                        <button id="resetBtn" class="btn btn-accent w-full text-white">RESET ALL
-                            CALCULATIONS</button>
+                        <button id="resetBtn" class="btn btn-accent w-full text-white">RESET ALL</button>
                     </div>
                 </div>
             </div>
